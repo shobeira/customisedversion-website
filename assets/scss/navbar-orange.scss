@@ -1,0 +1,33 @@
+// Ultra-specific selectors with attribute targeting
+.navigation a[class="navigation-title"],
+a.navigation-title,
+.navigation .navigation-title > a,
+.navigation .container .navigation-title a,
+header.navigation .navigation-title a {
+  color: #ff6b35 !important;
+}
+
+.navigation a[class="navigation-title"]:hover,
+a.navigation-title:hover,
+.navigation .navigation-title > a:hover,
+.navigation .container .navigation-title a:hover,
+header.navigation .navigation-title a:hover {
+  color: #ff5722 !important;
+}
+
+// Dark mode with multiple selectors
+body.colorscheme-dark .navigation a[class="navigation-title"],
+body.colorscheme-dark a.navigation-title,
+body.colorscheme-dark .navigation .navigation-title > a,
+body.colorscheme-dark .navigation .container .navigation-title a,
+body.colorscheme-dark header.navigation .navigation-title a {
+  color: #ff8c42 !important;
+}
+
+body.colorscheme-dark .navigation a[class="navigation-title"]:hover,
+body.colorscheme-dark a.navigation-title:hover,
+body.colorscheme-dark .navigation .navigation-title > a:hover,
+body.colorscheme-dark .navigation .container .navigation-title a:hover,
+body.colorscheme-dark header.navigation .navigation-title a:hover {
+  color: #ffa366 !important;
+}

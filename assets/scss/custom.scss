@@ -1,0 +1,704 @@
+// ========================================
+// SMOOTH SCROLLING
+// ========================================
+
+html {
+  scroll-behavior: smooth;
+}
+
+// ========================================
+// COMPACT FULL-WIDTH FOOTER
+// ========================================
+
+.footer {
+  margin-top: 0.5rem;
+  padding: 0 0 0.1rem 0;
+  background-color: #f5f5f5;
+  border-top: 2px solid #e0e0e0;
+  
+  body.colorscheme-dark & {
+    background-color: #1a1a1a;
+    border-top-color: #3a3a3a;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #d0d0d0;
+  
+  body.colorscheme-dark & {
+    border-bottom-color: #3a3a3a;
+  }
+}
+
+.footer-section {
+  min-width: 0;
+  
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    color: #007bff;
+    letter-spacing: 0.5px;
+    
+    body.colorscheme-dark & {
+      color: #4dabf7;
+    }
+  }
+  
+  // Make the first section (CustomisedVersion) orange
+  &:first-child h3 {
+    color: #ff6b35 !important; // Orange color
+    
+    body.colorscheme-dark & {
+      color: #ff8c42 !important; // Lighter orange for dark mode
+    }
+  }
+  
+  p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .tagline {
+    font-style: italic;
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .abn {
+    font-weight: 600;
+    margin-top: 0.3rem;
+    font-size: 0.95rem;
+    padding: 0.2rem 0;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: #007bff;
+      
+      body.colorscheme-dark & {
+        color: #4dabf7;
+      }
+    }
+  }
+  
+  // Quick Links section - constrain width AND center heading
+  &:last-child {
+    max-width: 300px; // Constrain the width of Quick Links
+    
+    h3 {
+      text-align: center; // Center the "Quick Links" heading
+    }
+  }
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto; // Two columns, auto-sized
+  grid-template-rows: auto auto; // Two rows
+  column-gap: 2rem; // Space between columns
+  row-gap: 0.25rem; // Space between rows
+  width: fit-content; // Only as wide as needed
+  margin: 0 auto; // Center the grid under the heading
+  
+  li {
+    font-size: 0.95rem;
+    
+    a {
+      display: inline-block;
+      padding: 0.1rem 0;
+    }
+  }
+  
+  // Explicit grid placement for perfect alignment
+  li:nth-child(1) { grid-row: 1; grid-column: 1; } // Services - top left
+  li:nth-child(2) { grid-row: 1; grid-column: 2; } // Pricing - top right
+  li:nth-child(3) { grid-row: 2; grid-column: 1; } // About - bottom left
+  li:nth-child(4) { grid-row: 2; grid-column: 2; } // Contact - bottom right
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6c757d;
+  padding-top: 0.3rem; // Reduced from 0.6rem
+  padding-bottom: 0;
+  
+  p {
+    margin: 0.1rem 0; // Reduced from 0.3rem to 0.1rem
+    line-height: 1.3; // Tighter line height
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+    
+    body.colorscheme-dark & {
+      color: #4dabf7;
+    }
+  }
+}
+
+// ========================================
+// RESPONSIVE DESIGN
+// ========================================
+
+// Tablet and smaller (max-width: 992px)
+@media (max-width: 992px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+// Mobile (max-width: 768px)
+@media (max-width: 768px) {
+  .footer {
+    padding: 0.8rem 0 0.6rem 0;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .footer-section h3 {
+    font-size: 1rem;
+  }
+}
+
+// ========================================
+// CALL-TO-ACTION BUTTONS
+// ========================================
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  margin: 1rem 0.5rem;
+  background-color: #007bff;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+  
+  &:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+    color: #ffffff !important;
+  }
+  
+  body.colorscheme-dark & {
+    background-color: #4dabf7;
+    color: #1a1a1a !important;
+    
+    &:hover {
+      background-color: #339af0;
+      color: #1a1a1a !important;
+    }
+  }
+}
+
+.cta-secondary {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff !important;
+  
+  &:hover {
+    background-color: #007bff;
+    color: #ffffff !important;
+  }
+  
+  body.colorscheme-dark & {
+    border-color: #4dabf7;
+    color: #4dabf7 !important;
+    background-color: transparent;
+    
+    &:hover {
+      background-color: #4dabf7;
+      color: #1a1a1a !important;
+    }
+  }
+}
+
+// ========================================
+// SERVICE SQUARE BOXES
+// ========================================
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+  max-width: 1200px;
+}
+
+.service-box {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; // Makes it square (1:1 aspect ratio)
+  background-color: #f8f9fa;
+  border: 3px solid #e0e0e0;
+  border-radius: 12px;
+  text-decoration: none !important;
+  color: inherit;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.25);
+    border-color: #007bff;
+    
+    .service-icon {
+      transform: scale(1.15);
+    }
+    
+    h3 {
+      color: #007bff;
+    }
+  }
+  
+  body.colorscheme-dark & {
+    background-color: #2d2d2d;
+    border-color: #4a4a4a;
+    
+    &:hover {
+      border-color: #4dabf7;
+      box-shadow: 0 12px 24px rgba(77, 171, 247, 0.25);
+      
+      h3 {
+        color: #4dabf7;
+      }
+    }
+    
+    // Dark mode description text color
+    .service-box-content p {
+      color: #c8c8c8;
+    }
+  }
+}
+
+.service-box-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  
+  h3 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    line-height: 1.3;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 1rem;
+    color: #495057; // Darker gray for better contrast in light mode
+    font-weight: 600; // Semi-bold for better readability
+    line-height: 1.4;
+  }
+}
+
+.service-icon {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+  line-height: 1;
+  
+  // Font Awesome icon styling
+  i {
+    font-size: 4rem;
+    display: block;
+  }
+}
+
+// Tablet responsive (2 columns)
+@media (max-width: 992px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Mobile responsive (1 column)
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-box-content {
+    padding: 1rem;
+    
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+  }
+}
+
+// ========================================
+// PRICING CARDS
+// ========================================
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.pricing-card {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.15);
+    border-color: #007bff;
+  }
+  
+  &.featured {
+    border-color: #007bff;
+    border-width: 3px;
+    transform: scale(1.05);
+    
+    &:hover {
+      transform: scale(1.05) translateY(-8px);
+    }
+  }
+  
+  body.colorscheme-dark & {
+    background-color: #2d2d2d;
+    border-color: #4a4a4a;
+    
+    &:hover {
+      border-color: #4dabf7;
+      box-shadow: 0 12px 24px rgba(77, 171, 247, 0.15);
+    }
+    
+    &.featured {
+      border-color: #4dabf7;
+    }
+  }
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 0.4rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+  body.colorscheme-dark & {
+    background-color: #4dabf7;
+    color: #1a1a1a;
+  }
+}
+
+.pricing-header {
+  margin-bottom: 2rem;
+  
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #212529;
+    
+    body.colorscheme-dark & {
+      color: #ffffff;
+    }
+  }
+  
+  .price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    
+    a {
+      color: #007bff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        color: #0056b3;
+        text-decoration: underline;
+      }
+      
+      body.colorscheme-dark & {
+        color: #4dabf7;
+        
+        &:hover {
+          color: #339af0;
+        }
+      }
+    }
+  }
+  
+.price-description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0;
+    text-align: center; // Add this line
+    
+    body.colorscheme-dark & {
+      color: #c8c8c8;
+    }
+  }
+}
+
+.pricing-features {
+  text-align: left;
+  margin-bottom: 2rem;
+  
+  h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #495057;
+    
+    body.colorscheme-dark & {
+      color: #e0e0e0;
+    }
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      padding: 0.6rem 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: flex-start;
+      line-height: 1.5;
+      
+      .check {
+        color: #28a745;
+        font-weight: 700;
+        margin-right: 0.8rem;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        
+        body.colorscheme-dark & {
+          color: #5cb85c;
+        }
+      }
+    }
+  }
+}
+
+.pricing-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: #007bff;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+  }
+  
+  body.colorscheme-dark & {
+    background-color: #4dabf7;
+    color: #1a1a1a !important;
+    
+    &:hover {
+      background-color: #339af0;
+    }
+  }
+}
+
+// Tablet responsive
+@media (max-width: 992px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .pricing-card.featured {
+    transform: scale(1);
+    
+    &:hover {
+      transform: translateY(-8px);
+    }
+  }
+}
+
+// Mobile responsive
+@media (max-width: 600px) {
+  .pricing-card {
+    padding: 1.5rem;
+  }
+  
+  .pricing-header {
+    h3 {
+      font-size: 1.5rem;
+    }
+    
+    .price {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+// ========================================
+// STICKY NAVIGATION - COMPLETE & CONSOLIDATED
+// ========================================
+
+.navigation {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  align-items: center !important;
+  
+  // Light theme background
+  background-color: #fafafa !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  
+  // Dark theme background
+  body.colorscheme-dark & {
+    background-color: #2b2b2b !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  // Auto mode - follow system preference
+  @media (prefers-color-scheme: dark) {
+    body.colorscheme-auto & {
+      background-color: #2b2b2b !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    }
+  }
+  
+  // Container alignment
+  .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+  
+  // Title styling and alignment
+  .navigation-title {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    
+    a {
+      display: flex !important;
+      align-items: center !important;
+      line-height: 1 !important;
+      color: #ff6b35 !important; // Orange in light mode
+      
+      &:hover,
+      &:focus {
+        color: #ff5722 !important; // Darker orange on hover
+      }
+    }
+    
+    span {
+      color: #ff6b35 !important;
+    }
+  }
+  
+  // Menu list alignment
+  .navigation-list {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    height: 100%;
+  }
+  
+  // Menu items alignment
+  .navigation-item {
+    display: flex !important;
+    align-items: center !important;
+    height: 100%;
+    
+    a {
+      display: flex !important;
+      align-items: center !important;
+      line-height: 1 !important;
+    }
+  }
+  
+  // Dark mode orange for title
+  body.colorscheme-dark & {
+    .navigation-title a {
+      color: #ff8c42 !important; // Lighter orange in dark mode
+      
+      &:hover,
+      &:focus {
+        color: #ffa366 !important; // Even lighter on hover
+      }
+    }
+    
+    .navigation-title span {
+      color: #ff8c42 !important;
+    }
+  }
+}
+

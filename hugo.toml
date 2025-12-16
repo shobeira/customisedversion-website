@@ -1,0 +1,123 @@
+baseURL = "https://customisedversion.com.au/"
+languageCode = "en-AU"
+title = "CustomisedVersion - Make it intelligent"
+theme = "coder"
+
+# Enable emoji support
+enableEmoji = true
+
+# Number of posts per page
+[pagination]
+  pagerSize = 10
+
+# Copyright notice
+copyright = "© 2025 CustomisedVersion. All rights reserved."
+
+# Syntax highlighting
+pygmentsStyle = "monokai"
+pygmentsCodeFences = true
+
+[params]
+  author = "Embedded Systems Consultant"
+  description = "Embedded Systems Consulting - PCB Design, System Architecture, Firmware Development"
+  keywords = "embedded systems, PCB design, firmware, STM32, IoT, consulting, Tasmania, Australia"
+  info = ["","Transform Your Hardware Ideas Into Intelligent, Production-Ready Devices.","Expert embedded systems consulting for system architecture, PCB design, and firmware development.",'',"Over 10 years experience | ISO compliant | Tasmania-based"]
+  # avatarURL = "images/avatar.jpg"
+  
+  # Contact information
+  email = "hi@customisedversion.com.au"
+  phone = "0461 282 614"
+  address = "12 Charles Street, Triabunna, TAS 7190"
+  
+  # ABN
+  abn = "33141369014"
+  
+  # Colour scheme
+  colorScheme = "auto"
+  hideColorSchemeToggle = false
+  
+  # Custom CSS
+ # customCSS = ["css/custom.css"]
+  customSCSS = ["scss/custom.scss", "scss/navbar-orange.scss"]
+  
+  # Custom JS
+  customJS = []
+  
+  # RTL support
+  rtl = false
+  
+  # Display lines of code
+  maxSeeAlsoItems = 5
+
+  # Enable/disable features
+  enableTwemoji = false
+  hideFooter = false
+  hideCopyright = false
+  hideCredits = false
+  
+  # Date format
+  dateFormat = "2 January 2006"
+
+# Social media links
+#[[params.social]]
+ # name = "Github"
+ # icon = "fa-brands fa-github fa-2x"
+ # weight = 1
+ # url = "https://github.com/customisedversion/"
+
+#[[params.social]]
+ # name = "LinkedIn"
+#  icon = "fa-brands fa-linkedin fa-2x"
+ # weight = 2
+ # url = "https://linkedin.com/company/customisedversion/"
+
+#[[params.social]]
+#  name = "Email"
+#  icon = "fa-solid fa-envelope fa-2x"
+#  weight = 3
+#  url = "mailto:shoby@customisedversion.com.au"
+
+# Main menu
+[[menu.main]]
+  name = "About"
+  weight = 3
+  url = "/about/"
+
+[[menu.main]]
+  name = "Services"
+  weight = 1
+  url = "/services/"
+
+[[menu.main]]
+  name = "Pricing"
+  weight = 2
+  url = "/pricing/"
+
+[[menu.main]]
+  name = "Contact"
+  weight = 4
+  url = "/contact/"
+
+# Taxonomies
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Markup configuration
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Privacy configuration
+[privacy]
+  [privacy.youtube]
+    privacyEnhanced = true

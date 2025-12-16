@@ -1,0 +1,46 @@
+<footer class="footer">
+  <section class="container">
+    <div class="footer-content">
+      <!-- Business Information -->
+      <div class="footer-section">
+        <h3>CustomisedVersion</h3>
+        <p class="tagline">Make it intelligent</p>
+        <p class="abn">ABN: {{ .Site.Params.abn }}</p>
+      </div>
+      
+      <!-- Contact Information -->
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>
+          <strong>Mobile:</strong> <a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a><br>
+          <strong>Address:</strong> {{ .Site.Params.address }}<br>
+          <strong>Email:</strong> <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Copyright and Credits -->
+    <div class="footer-bottom">
+      {{ if not .Site.Params.hidecopyright }}
+        <p>{{ .Site.Copyright | safeHTML }}</p>
+      {{ end }}
+      {{ if not .Site.Params.hidecredits }}
+        <p>
+          Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 
+          & 
+          <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+        </p>
+      {{ end }}
+    </div>
+  </section>
+</footer>
