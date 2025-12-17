@@ -7,6 +7,43 @@ html {
 }
 
 // ========================================
+// THEME TOGGLE - BELOW NAVBAR, TOP RIGHT
+// ========================================
+
+#dark-mode-toggle {
+  position: fixed !important;
+  top: 7rem !important; // Below navbar on desktop
+  right: 2rem !important;
+  bottom: auto !important;
+  left: auto !important;
+  z-index: 999 !important; // Below navbar's 1000
+  margin: 0 !important;
+  font-size: 2.4rem !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  cursor: pointer !important;
+}
+
+// Mobile positioning - adjust for shorter mobile navbar
+@media only screen and (max-width: 768px) {
+  #dark-mode-toggle {
+    top: 5.5rem !important; // Adjusted for mobile navbar height
+    right: 1.5rem !important;
+    font-size: 2.2rem !important;
+    z-index: 999 !important; // Make sure it's visible
+  }
+  
+  // When menu is open, keep toggle visible
+  .navigation .navigation-list.is-active ~ #dark-mode-toggle,
+  body.menu-open #dark-mode-toggle {
+    z-index: 999 !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+
+// ========================================
 // COMPACT FULL-WIDTH FOOTER
 // ========================================
 
@@ -165,30 +202,133 @@ html {
 }
 
 // ========================================
-// RESPONSIVE DESIGN
+// MOBILE NAVIGATION FIXES - COMPLETE & ISOLATED
 // ========================================
 
-// Tablet and smaller (max-width: 992px)
-@media (max-width: 992px) {
-  .footer-content {
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+@media (max-width: 768px) {
+  // Make navbar fit properly
+  .navigation {
+    height: auto !important;
+    min-height: 5rem !important;
+    padding: 0.5rem 0 !important;
+  }
+  
+  // Smaller orange text
+  .navigation .navigation-title {
+    font-size: 1.2rem !important;
+    line-height: 1.2 !important;
+    max-width: 60% !important;
+    
+    a {
+      font-size: 1.2rem !important;
+      white-space: normal !important;
+      display: block !important;
+    }
+  }
+  
+  // Hamburger menu - top right corner
+  .navigation .menu-button {
+    position: absolute !important;
+    top: 1.5rem !important;
+    right: 2rem !important;
+    z-index: 1001 !important;
+  }
+  
+  // Vertical dropdown menu - MOBILE ONLY
+  .navigation .navigation-list {
+    position: fixed !important;
+    top: 5rem !important;
+    left: 0 !important;
+    right: 0 !important;
+    background-color: #fafafa !important;
+    flex-direction: column !important;
+    padding: 0.5rem 0 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    
+    body.colorscheme-dark & {
+      background-color: #2b2b2b !important;
+    }
+    
+    // Inside the @media (max-width: 768px) block, find .navigation-item and update:
+
+.navigation-item {
+  width: 100% !important;
+  text-align: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important; // Add separator
+
+  a {
+    display: block !important;
+    width: 100% !important;
+    padding: 0.5rem 1rem !important; // Tighter spacing
+    font-size: 1.2rem !important; // Slightly smaller font
+    line-height: 1.4 !important;
+  }
+}
+  }
+  
+  // Theme toggle - top right on mobile (inside the @media (max-width: 768px) block)
+#dark-mode-toggle {
+  position: fixed !important;
+  top: 1.5rem !important;
+  right: 6rem !important;
+  bottom: auto !important;
+  left: auto !important;
+  margin: 0 !important;
+  font-size: 2rem !important;
+  z-index: 1002 !important;
+}
+}
+
+// Mobile responsive - 2x2 GRID (4 boxes visible at once)
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr) !important; // 2 columns - forced!
+    gap: 1rem !important; // Smaller gap
+    margin: 2rem 0 !important;
+  }
+  
+  .service-box {
+    padding-bottom: 100% !important; // Keep square ratio
+  }
+  
+  .service-box-content {
+    padding: 0.8rem !important; // Compact padding
+    
+    h3 {
+      font-size: 0.85rem !important; // Much smaller heading
+      margin: 0.4rem 0 0.2rem 0 !important;
+      line-height: 1.2 !important;
+    }
+    
+    p {
+      font-size: 0.7rem !important; // Smaller description
+      line-height: 1.2 !important;
+      font-weight: 500 !important;
+    }
+  }
+  
+  .service-icon {
+    font-size: 2.5rem !important; // Smaller icon
+    margin-bottom: 0.3rem !important;
+    
+    i {
+      font-size: 2.5rem !important;
+    }
   }
 }
 
-// Mobile (max-width: 768px)
-@media (max-width: 768px) {
-  .footer {
-    padding: 0.8rem 0 0.6rem 0;
+// Tighter hamburger menu spacing
+@media only screen and (max-width: 768px) {
+  .navigation .navigation-list .navigation-item {
+    padding: 0 !important;
+    margin: 0 !important;
   }
   
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .footer-section h3 {
-    font-size: 1rem;
+  .navigation .navigation-list .navigation-item a {
+    padding: 0.5rem 1rem !important;
+    line-height: 1.3 !important;
   }
 }
 
@@ -702,3 +842,54 @@ html {
   }
 }
 
+
+
+// ========================================
+// HAMBURGER MENU TIGHTER SPACING - ULTRA SPECIFIC
+// ========================================
+
+@media only screen and (max-width: 768px) {
+  // Override theme's massive font-size and line-height
+  body .navigation .navigation-list .navigation-item a,
+  body header.navigation .navigation-list .navigation-item a,
+  .navigation .navigation-list li.navigation-item a {
+    padding: 0.6rem 1rem !important;
+    line-height: 1.3 !important;
+    font-size: 1.3rem !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+  
+  // Zero out list item padding
+  body .navigation .navigation-list .navigation-item,
+  body header.navigation .navigation-list .navigation-item,
+  .navigation .navigation-list li.navigation-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.3 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  body .navigation .navigation-list .navigation-item:last-child,
+  .navigation .navigation-list li.navigation-item:last-child {
+    border-bottom: none !important;
+  }
+}
+
+// ========================================
+// MOBILE THEME TOGGGLE RED
+// ========================================
+
+@media only screen and (max-width: 768px) {
+  #dark-mode-toggle {
+    top: 7rem !important; // Adjust to be below navbar
+    right: 1.5rem !important;
+    font-size: 2rem !important; // Normal size (remove the 3rem)
+    background-color: transparent !important; // Remove red background
+    padding: 0 !important; // Remove extra padding
+    border-radius: 0 !important; // Remove circle
+    z-index: 9999 !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+}

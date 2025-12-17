@@ -11,11 +11,10 @@ Ready to make your project intelligent? We'd love to hear about your embedded sy
 ## Contact Information
 
 **Email:** [project @ customisedversion.com.au](mailto:project@customisedversion.com.au)  
-**Phone:** 0461 282 614  
+**Phone:** [0461 282 614](tel:+61434567890)
 
 **Address:**  
 CustomisedVersion  
-12 Charles Street
 Triabunna 7190  
 Tasmania, Australia
 
@@ -43,6 +42,7 @@ To help us provide an accurate quote and timeline, please include:
 5. **Industry/Application:** What industry or application this is for
 6. **Current Status:** Are you starting from scratch or enhancing an existing system?
 
+Just click  [HERE](mailto:shoby@customisedversion.com.au?subject=Embedded%20Systems%20Consultation%20Request&body=To%20help%20us%20provide%20an%20accurate%20quote%20and%20timeline,%20please%20include:%0D%0A%0D%0A1.%20Project%20Description:%20Brief%20overview%20of%20what%20you're%20trying%20to%20achieve%0D%0A%0D%0A2.%20Technical%20Requirements:%20Any%20specific%20technical%20constraints%20or%20requirements%0D%0A%0D%0A3.%20Timeline:%20Your%20desired%20completion%20date%20or%20project%20timeline%0D%0A%0D%0A4.%20Budget:%20Approximate%20budget%20range%20(helps%20us%20suggest%20the%20best%20approach)%0D%0A%0D%0A5.%20Industry/Application:%20What%20industry%20or%20application%20this%20is%20for%0D%0A%0D%0A6.%20Current%20Status:%20Are%20you%20starting%20from%20scratch%20or%20enhancing%20an%20existing%20system?%0D%0A%0D%0A) and the preformatted email is ready for you.
 ---
 
 ## Response Time
