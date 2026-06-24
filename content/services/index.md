@@ -22,7 +22,7 @@ CustomisedVersion offers comprehensive embedded systems consulting services, fro
   <a href="#consulting" class="service-box">
     <div class="service-box-content">
       <div class="service-icon">📟</div>
-      <h3>Embedded Systems Consulting</h3>
+      <h3>Embedded Systems Design</h3>
       <p>Expert Guidance</p>
     </div>
   </a>
@@ -91,7 +91,7 @@ We follow a structured, phase-based approach to system architecture, ensuring al
 
 <div id="consulting"></div>
 
-## Embedded Systems Consulting
+## Embedded Systems Design
 
 General embedded systems consulting for businesses requiring expert guidance.
 

@@ -18,11 +18,12 @@ Choose the PCB design package that fits your project needs. Each tier includes a
       <p class="price-description">Perfect for prototyping and validation</p>
     </div>
     <div class="pricing-features">
-      <h4>What's Included:</h4>
+      <h4>The deliverables of this package are:</h4>
       <ul>
         <li><span class="check">✓</span> Assembled PCB prototype</li>
         <li><span class="check">✓</span> Successful functional testing</li>
         <li><span class="check">✓</span> Guaranteed ZERO error report</li>
+        <li><span class="check">📎</span> CustomisedVersion logo on the PCB</li>
       </ul>
     </div>
     <a href="/contact/" class="pricing-button">Get Quote</a>
@@ -34,11 +35,15 @@ Choose the PCB design package that fits your project needs. Each tier includes a
       <p class="price-description">Ready for manufacturing at scale</p>
     </div>
     <div class="pricing-features">
-      <h4>All Proof of Concept features, plus:</h4>
+      <h4>The deliverables of this package are:</h4>
       <ul>
-        <li><span class="check">✓</span> Manufacturing files</li>
-        <li><span class="check">✓</span> Testing instructions</li>
-        <li><span class="check">✓</span> Bills of Materials</li>
+        <li><span class="check">✓</span> Assembled PCB prototype</li>
+        <li><span class="check">✓</span> Successful functional testing</li>
+        <li><span class="check">✓</span> Guaranteed ZERO error report</li>
+        <li><span class="check">📎</span> CustomisedVersion logo on the PCB</li>
+        <li><span class="check">✔️</span> Manufacturing files (Gerber files, Mechanical drawing, etc)</li>
+        <li><span class="check">✔️</span> Testing instructions</li>
+        <li><span class="check">✔️</span> Bills of Materials (BOM)</li>
       </ul>
     </div>
     <a href="/contact/" class="pricing-button">Get Quote</a>
@@ -50,11 +55,19 @@ Choose the PCB design package that fits your project needs. Each tier includes a
       <p class="price-description">Complete product lifecycle support</p>
     </div>
     <div class="pricing-features">
-      <h4>All Production Freedom features, plus:</h4>
+      <h4>The deliverables of this package are:</h4>
       <ul>
-        <li><span class="check">✓</span> Design files</li>
-        <li><span class="check">✓</span> Documentation</li>
-        <li><span class="check">✓</span> Full product lifecycle Systems Engineering</li>
+        <li><span class="check">✓</span> Assembled PCB prototype</li>
+        <li><span class="check">✓</span> Successful functional testing</li>
+        <li><span class="check">✓</span> Guaranteed ZERO error report</li>
+        <li><span class="check">✔️</span> NO CustomisedVersion logo on the PCB</li>
+        <li><span class="check">✓</span> Manufacturing files (Gerber files, Mechanical drawing, etc)</li>
+        <li><span class="check">✓</span> Testing instructions</li>
+        <li><span class="check">✓</span> Bills of Materials (BOM)</li>
+        <li><span class="check">✔️</span> Design files (Schematics + PCB layout)</li>
+        <li><span class="check">✔️</span> Documentation</li>
+        <li><span class="check">✔️</span> Full product lifecycle Systems Engineering</li>
+        <li><span class="check">✔️</span> Transferring manufacturing rights and IP to the client</li>
       </ul>
     </div>
     <a href="/contact/" class="pricing-button">Get Quote</a>
@@ -76,7 +89,7 @@ Comprehensive systems architecture and design services to complement your PCB de
 - Use case diagrams and documentation
 - Integration planning and support
 
-**Rate:** AU$100/hour or custom project quote
+<!-- **Rate:** AU$100/hour or custom project quote -->
 
 [Learn more about Systems Engineering →](/services/#systems-engineering)
 
@@ -93,7 +106,8 @@ Expert firmware development across multiple platforms to bring your hardware to 
 - Communication protocols (UART, I2C, SPI, LoRa)
 - Module configuration and testing
 
-**Rate:** AU$100/hour or custom project quote
+<!-- **Rate:** AU$100/hour or custom project quote -->
+
 
 [Learn more about Firmware Development →](/services/#firmware)
 
@@ -117,7 +131,7 @@ All PCB design packages are quoted based on:
 
 Beyond our PCB packages, we offer flexible engagement options:
 
-- **Hourly Consulting:** A$150/hour - Perfect for ongoing support and consultation
+- **Hourly Consulting:** Perfect for ongoing support and consultation
 - **Fixed-Price Projects:** Defined scope with fixed pricing for complete solutions
 
 

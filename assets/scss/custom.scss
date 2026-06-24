@@ -49,7 +49,7 @@ html {
 
 .footer {
   margin-top: 0.5rem;
-  padding: 0 0 0.1rem 0;
+  padding: 0.6 0 0.4rem 0;
   background-color: #f5f5f5;
   border-top: 2px solid #e0e0e0;
   
@@ -59,17 +59,18 @@ html {
   }
   
   .container {
-    max-width: 100%;
-    padding: 0 2rem;
+    max-width: 90rem; // Match the navbar/content container so footer edges align with the navbar
+    margin: 0 auto;    // Centre it like the theme container
+    padding: 0 2rem;   // Same 2rem horizontal padding as the navbar container
   }
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 4rem;
-  margin-bottom: 0.8rem;
-  padding-bottom: 0.8rem;
+  gap: 2rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.4rem;
   border-bottom: 1px solid #d0d0d0;
   
   body.colorscheme-dark & {
@@ -103,9 +104,9 @@ html {
   }
   
   p {
-    margin: 0.2rem 0;
-    font-size: 0.95rem;
-    line-height: 1.4;
+    margin: 0.1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.3;
   }
   
   .tagline {
@@ -463,18 +464,18 @@ html {
   
   h3 {
     margin: 1rem 0 0.5rem 0;
-    font-size: 1.3rem;
+    font-size: 2rem; // Enlarged from 1.3rem — largest that keeps "Embedded Systems Design" tidy
     font-weight: 700;
     transition: color 0.3s ease;
-    line-height: 1.3;
+    line-height: 1.25;
   }
   
   p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.35rem; // Enlarged from 1rem
     color: #495057; // Darker gray for better contrast in light mode
     font-weight: 600; // Semi-bold for better readability
-    line-height: 1.4;
+    line-height: 1.35;
   }
 }
 
@@ -537,6 +538,8 @@ html {
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
+  display: flex;            // Flex column so the Get Quote button can sit at the bottom
+  flex-direction: column;
   
   &:hover {
     transform: translateY(-8px);
@@ -683,6 +686,8 @@ html {
 
 .pricing-button {
   display: inline-block;
+  margin-top: auto;     // Push button to the bottom of the (equal-height) card
+  align-self: center;   // Keep it horizontally centred within the flex column
   padding: 1rem 2.5rem;
   background-color: #007bff;
   color: #ffffff !important;
@@ -706,6 +711,13 @@ html {
       background-color: #339af0;
     }
   }
+}
+
+// Bold "NO" in pricing feature lines.
+// Uses a CSS class (not <strong> or inline style) because those are being
+// stripped in this build, while class-based spans (.check) render fine.
+.pricing-features .emphasis-no {
+  font-weight: 700;
 }
 
 // Tablet responsive
@@ -842,6 +854,26 @@ html {
   }
 }
 
+// ========================================
+// NAVIGATION — PREVENT WRAPPING (DESKTOP ONLY)
+// Keeps the full title "CustomisedVersion - Make it intelligent"
+// and multi-word menu items (e.g. "Smart Systems") on one line.
+// Scoped to desktop so it never overrides the mobile wrapping rules above.
+// ========================================
+
+@media only screen and (min-width: 769px) {
+  .navigation .navigation-title,
+  .navigation .navigation-title a,
+  .navigation .navigation-title span {
+    white-space: nowrap !important;
+  }
+
+  .navigation .navigation-list .navigation-item a,
+  .navigation .navigation-list .navigation-item span {
+    white-space: nowrap !important;
+  }
+}
+
 
 
 // ========================================
@@ -892,4 +924,18 @@ html {
     display: block !important;
     visibility: visible !important;
   }
+}
+
+// ========================================
+// CONTENT PARAGRAPHS — LEFT-ALIGN (override theme justify)
+// The Coder theme justifies content paragraphs and auto-hyphenates,
+// which spreads words with uneven gaps and breaks words like "consul-tation".
+// Left alignment reads naturally and removes the odd spacing.
+// ========================================
+
+.content article p {
+  text-align: left;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
+  hyphens: none;
 }

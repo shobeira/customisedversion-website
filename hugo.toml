@@ -6,12 +6,12 @@ theme = "coder"
 # Enable emoji support
 enableEmoji = true
 
+# Copyright notice
+copyright = "© 2026 CustomisedVersion. All rights reserved."
+
 # Number of posts per page
 [pagination]
   pagerSize = 10
-
-# Copyright notice
-copyright = "© 2025 CustomisedVersion. All rights reserved."
 
 # Syntax highlighting
 pygmentsStyle = "monokai"
@@ -38,8 +38,8 @@ pygmentsCodeFences = true
   
   # Custom CSS
  # customCSS = ["css/custom.css"]
-  customSCSS = ["scss/custom.scss", "scss/navbar-orange.scss"]
-  
+   customSCSS = ["scss/custom.scss", "scss/navbar-orange.scss"]
+ #customSCSS = ["scss/custom.scss", "scss/navbar-orange.scss","scss/enhanced-design.scss"]
   # Custom JS
   customJS = []
   
@@ -80,7 +80,7 @@ pygmentsCodeFences = true
 # Main menu
 [[menu.main]]
   name = "About"
-  weight = 3
+  weight = 4
   url = "/about/"
 
 [[menu.main]]
@@ -89,13 +89,18 @@ pygmentsCodeFences = true
   url = "/services/"
 
 [[menu.main]]
-  name = "Pricing"
+  name = "Smart Systems"
   weight = 2
+  url = "/smart-systems/"
+
+[[menu.main]]
+  name = "Pricing"
+  weight = 3
   url = "/pricing/"
 
 [[menu.main]]
   name = "Contact"
-  weight = 4
+  weight = 5
   url = "/contact/"
 
 # Taxonomies

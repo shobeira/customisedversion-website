@@ -1,44 +1,55 @@
 ---
 title: "CustomisedVersion"
-date: 2025-12-12
+date: 2025-12-24
 draft: false
 ---
 
-# Make it intelligent
+# Electronic Engineering Consultancy | Tasmania
 
-Welcome to CustomisedVersion, your trusted partner for embedded systems consulting in Tasmania and across Australia.
+**CustomisedVersion** designs custom electronic systems for Tasmania's industries and innovators.
 
-## What We Do
-
-We specialise in bringing intelligence to your hardware projects through:
-
-- **PCB Design** - Custom circuit board design tailored to your requirements
-- **System Architecture** - Comprehensive embedded systems architecture and design
-- **Firmware Development** - Expert firmware configuration and development
-- **Embedded Systems Consulting** - Over 10 years of experience in embedded systems
-
-## Our Expertise
-
-With advanced qualifications including an Advanced Diploma of Electrical Technology and a Master's degree in Electronic Engineering, we bring deep technical expertise to every project:
-
-- Microcontrollers: STM32, PIC, ARM Cortex, Arduino, Raspberry Pi
-- Operating Systems: Linux, RTOS
-- Communication Protocols: UART, I2C, SPI
-- Industry Standards: ISO compliance for medical devices
-- Specialisations: Ruggedised IoT systems for harsh environments
-
-## Industries We Serve
-
-- Aquaculture and Marine Technology
-- Renewable Energy
-- AgTech
-- Medical Devices
-- Industrial Automation
-
-## Based in Tasmania
-
-Located in Triabunna, Tasmania, we understand the unique challenges of regional Australian businesses and specialise in solutions for Tasmania's key industries including aquaculture, renewable energy, and marine technology.
+We transform hardware ideas into intelligent, production-ready devices.
 
 ---
 
-Ready to make your project intelligent? [Contact us](/contact/) to discuss your requirements.
+## How Can We Help?
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+
+<div style="text-align: center; padding: 2rem; background: var(--code-bg); border-radius: 8px;">
+
+### Professional Design Services
+
+Custom electronic engineering for your business needs.
+
+**Systems architecture • PCB design • Firmware development**
+
+[Explore Services →](/services/)
+
+</div>
+
+<div style="text-align: center; padding: 2rem; background: var(--code-bg); border-radius: 8px;">
+
+### Smart Systems for Your Operation
+
+Customised automation, monitoring, and control solutions.
+
+**Water monitoring • Equipment alerts • Environmental sensing**
+
+[View Smart Systems →](/smart-systems/)
+
+</div>
+
+</div>
+
+---
+
+## Why CustomisedVersion?
+
+**Master's in Electronic Engineering** | **Tasmania-Based** | **10+ Years Experience**
+
+We design **customised versions** of automation, monitoring, and control systems specifically for your requirements.
+
+---
+
+[Discuss Your Project →](/contact/)

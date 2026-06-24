@@ -11,13 +11,15 @@ CustomisedVersion is an embedded systems consulting business specialising in sys
 
 ## Industry Focus
 
-Our vision is particularly focused on Tasmania's key growth sectors:
-- **Aquaculture** - IoT monitoring systems for marine environments
-- **Renewable Energy** - Smart energy management and monitoring
-- **Marine Technology** - Ruggedised systems for harsh marine conditions
-- **AgTech** - Precision agriculture and monitoring solutions
-- **Industrial Automation** - Industrial control systems and process monitoring
+Our vision is particularly focused on the growth sectors below:
 - **IoT and Edge Computing** - Smart connected devices and remote monitoring systems with local intelligence
+- **Renewable Energy** - Smart energy management and monitoring
+- **Industrial Automation** - Industrial control systems and process monitoring
+- **Marine Technology** - Ruggedised systems for harsh marine conditions
+- **Aquaculture** - IoT monitoring systems for marine environments
+- **AgTech** - Precision agriculture and monitoring solutions
+
+
 
 
 ## Our Expertise
@@ -33,7 +35,7 @@ With over 10 years of experience in embedded systems design, CustomisedVersion b
 ### Our Qualifications
 
 - Master's Degree in Electronic Engineering
-- Bachelor's Degree in electronic Engineerign
+- Bachelor's Degree in Electronic Engineering
 - Advanced Diploma of Electrical Technology
 - ISO Standards Compliance (Medical Devices)
 - Project Master Certified
@@ -64,8 +66,6 @@ With over 10 years of experience in embedded systems design, CustomisedVersion b
 
 
 ## Our Location
-
-Based in Triabunna, Tasmania, CustomisedVersion serves clients across Tasmania and Australia, and of course worldwide.
 
 Our regional location gives us unique insights into the challenges faced by businesses operating in rural and remote environments, particularly in developing ruggedised, reliable systems for harsh conditions.
 
